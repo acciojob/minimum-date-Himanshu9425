@@ -1,5 +1,8 @@
 function minDate(dates) {
   //write you code here
+	let mindate= new date(Math.min(...dates.map(date=>new Date(date))));
+	return minDate.toISOString().split("T")[0];
+	
 }
 
 // Do not change the code
@@ -37,4 +40,4 @@ var dates = [
   "2023/03/30",
 ];
 
-alert(minDate(dates));
+//alert(minDate(dates));
